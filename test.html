@@ -1,0 +1,295 @@
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+ </head>
+
+<body style="background-color:rgb(238, 255, 251); margin-left: 25px;">
+
+    <div class="w3-container">
+    <h1>
+       <CEnter>
+           
+           <img src="img/spotifyy.jpg" width="300" height="100"/>
+        </CEnter>  
+    </h1>
+    
+    <h2>
+        TOP 10 SONGS
+    </h2>
+    
+    
+
+    <P align="CEnter" >
+        
+  
+        <button style= " background-color: #ca288c; "  type="button" onclick="parent.location='addsong.html'">+ Add Song</button>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for songs.." title="Type in a name" >
+    </P>
+    <style>
+        
+        input{
+            
+            
+            width: 30%;
+            font-size: 16px;
+            padding: 8px 20px 8px 20px;
+            border: 2px solid rgb(19, 17, 17);
+            margin-bottom: 12px;
+        }
+    </style>
+   <table id="myTable" border="1" width="1300px" cellpadding="15px" b>
+       <thead>
+           <style>
+               thead {color: black;}
+tbody {color: blue;}    
+tfoot {color: red;}
+
+table td {
+    border-right: 2px solid black;
+  color: black;
+  
+}
+           </style>
+       <tr>
+            <th bgcolor="gray" width = 10 > ARTWORK</th>
+            <th bgcolor="gray"  style="width:20%" > SONG</th>
+            <th bgcolor="gray"  style="width:20%" > ARTIST</th>
+            <th bgcolor="gray"  style="width:20%"  > DATE OF RELEASE </th>
+            <th bgcolor="gray" style="width:10%" >RATING</th>
+       </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td> 
+                   <img src ="img/stay.jpg" width="200" height="200">
+                 </td>
+               <td style="color:rgb(27, 17, 17);font-size:30px; font-weight: bolder;">STAY</td>
+               <td style="font-size: 20px; font-weight: bold;">Justin bieber</td>
+               <td style="font-size: 20px; font-weight: bold;">26-january-2020</td>
+               <td>
+                   <style> 
+                   .rating{
+                    position: relative;
+                    transform: translate(0%,0%) rotateY(180deg);
+                    display: flex;
+                    
+                   }
+                   .rating input{
+    display:none;
+}
+.rating label
+{
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    
+}
+.rating label:before 
+{
+    content: "\f005";
+    font-family: fontAwesome;
+    position : absolute;
+    display: block;
+    font-size: 20px;
+    color : #101010;
+}
+.rating label:after 
+{
+    content: "\f005";
+    font-family: fontAwesome;
+    position: absolute;
+    font-size: 20px;
+    color : #6f32e0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0.0..5); 
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after
+{
+    opacity :1;
+}
+</style>
+<div class = "rating" >
+                    <input type = "radio" name = "star" id ="star1"><label for = "star1"></label>
+                    <input type = "radio" name = "star" id ="star2"><label for = "star2"></label>
+                    <input type = "radio" name = "star" id ="star3"><label for = "star3"></label>
+                    <input type = "radio" name = "star" id ="star4"><label for = "star4"></label>
+                    <input type = "radio" name = "star" id ="star5"><label for = "star5"></label>
+                   
+                 </div>    
+                  
+               </td>
+           </tr>
+           <tr>
+               <td>
+            <img src ="img/dhokha.jpg" width="200" height="200">
+                </td>
+            <td style="color:rgb(27, 17, 17);font-size:30px; font-weight: bolder;">DHOKHA</td>
+            <td style="font-size: 20px; font-weight: bold;"> ARJITH SINGH</td>
+            <td style="font-size: 20px; font-weight: bold;">20-january-2022</td>
+            <td>
+                <div class = "rating" >
+                    <input type = "radio" name = "star" id ="star1"><label for = "star1"></label>
+                    <input type = "radio" name = "star" id ="star2"><label for = "star2"></label>
+                    <input type = "radio" name = "star" id ="star3"><label for = "star3"></label>
+                    <input type = "radio" name = "star" id ="star4"><label for = "star4"></label>
+                    <input type = "radio" name = "star" id ="star5"><label for = "star5"></label>
+                   
+                 </div>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src ="img/srivalli.jpg" width="200" height="200"></td>
+            <td style="color:rgb(27, 17, 17);font-size:30px; font-weight: bolder;">SRIVALLI</td>
+            <td style="font-size: 20px; font-weight: bold;">SID SRIRAM</td>
+            <td style="font-size: 20px; font-weight: bold;">1-october-2021</td>
+            <td>
+                <div class = "rating" >
+                    <input type = "radio" name = "star" id ="star1"><label for = "star1"></label>
+                    <input type = "radio" name = "star" id ="star2"><label for = "star2"></label>
+                    <input type = "radio" name = "star" id ="star3"><label for = "star3"></label>
+                    <input type = "radio" name = "star" id ="star4"><label for = "star4"></label>
+                    <input type = "radio" name = "star" id ="star5"><label for = "star5"></label>
+                   
+                 </div>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src ="img/always been you.jpg" width="200" height="200"> </td>
+            <td style="color:rgb(27, 17, 17);font-size:30px; font-weight: bolder;">ALWYAS BEEN YOU</td>
+            <td style="font-size: 20px; font-weight: bold;">SHAWN MENDES</td>
+            <td style="font-size: 20px; font-weight: bold;">14-may-2021</td>
+            <td>
+                <div class = "rating" >
+                <input type = "radio" name = "star" id ="star1"><label for = "star1"></label>
+                <input type = "radio" name = "star" id ="star2"><label for = "star2"></label>
+                <input type = "radio" name = "star" id ="star3"><label for = "star3"></label>
+                <input type = "radio" name = "star" id ="star4"><label for = "star4"></label>
+                <input type = "radio" name = "star" id ="star5"><label for = "star5"></label>
+               
+             </div>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src ="img/save your tears.jpg" width="200" height="200"> </td>
+            <td style="color:rgb(27, 17, 17);font-size:30px; font-weight: bolder;">SAVE YOUR TEARS</td>
+            <td style="font-size: 20px; font-weight: bold;">ARIANA GRANDE</td>
+            <td style="font-size: 20px; font-weight: bold;">9-AUGUST-2020</td>
+            <td>
+                <div class = "rating" >
+                    <input type = "radio" name = "star" id ="star1"><label for = "star1"></label>
+                    <input type = "radio" name = "star" id ="star2"><label for = "star2"></label>
+                    <input type = "radio" name = "star" id ="star3"><label for = "star3"></label>
+                    <input type = "radio" name = "star" id ="star4"><label for = "star4"></label>
+                    <input type = "radio" name = "star" id ="star5"><label for = "star5"></label>
+                   
+                 </div>    
+            </td>
+        </tr>
+       </tbody>
+      
+    </div>
+   </table>
+   <br>
+</br>
+
+
+   <h3  style="position: relative; min-height: 70px"> TOP 10 ARTISTS</h3>
+   <table id="myTable" border="1" width="1300" cellpadding="20px" b>
+    <thead>
+        <style>
+            thead {color: black;}
+tbody {color: blue;}    
+tfoot {color: red;}
+
+table td {
+ border-right: 2px solid black;
+color: black;
+
+}
+</style>
+<tr>
+    <th bgcolor="gray" style="width:20%" > ARTISTS</th>
+    <th bgcolor="gray"> DATE OF BIRTH</th>
+    <th bgcolor="gray"> SONGS</th>
+   
+</tr>
+<tr>
+    <td  style="color:rgb(27, 17, 17);font-size:20px; font-weight: bolder;">JUSTIN BIEBER, SELENA</td>
+    <td  style="color:rgb(27, 17, 17);font-size:15px; font-weight: bolder;">01 march 1914</td>
+    <td  style="color:rgb(27, 17, 17);font-size:15px; font-weight: bolder;">Stay, peaches, love yourself, sorry, let me love you</td>
+</tr>
+<tr>
+    <td  style="color:rgb(27, 17, 17);font-size:20px; font-weight: bolder;">ARJITH SINGH</td>
+    <td  style="color:rgb(27, 17, 17);font-size:15px; font-weight: bolder;">25 April 1987</td>
+    <td  style="color:rgb(27, 17, 17);font-size:15px; font-weight: bolder;">Dhokha, Zaalima, Tum hi ho, ve mahi, pal</td>
+</tr>
+<tr>
+    <td  style="color:rgb(27, 17, 17);font-size:20px; font-weight: bolder;">SID SRIRAM, THAMAN</td>
+    <td  style="color:rgb(27, 17, 17);font-size:15px; font-weight: bolder;">19 May 1990</td>
+    <td  style="color:rgb(27, 17, 17);font-size:15px; font-weight: bolder;">srivalli, Thalli pogathey, kalavathi, maruvaarthai, so so ga </td>
+</tr>
+<tr>
+    <td  style="color:rgb(27, 17, 17);font-size:20px; font-weight: bolder;">SHAWN MENDES</td>
+    <td  style="color:rgb(27, 17, 17);font-size:15px; font-weight: bolder;">8 August 1998</td>
+    <td  style="color:rgb(27, 17, 17);font-size:15px; font-weight: bolder;">Always been you, When you're gone, summer of love, It'll be okay, Wonder</td>
+</tr>
+<tr>
+    <td  style="color:rgb(27, 17, 17);font-size:20px; font-weight: bolder;">ARIANA GRANDE</td>
+    <td  style="color:rgb(27, 17, 17);font-size:15px; font-weight: bolder;">26 June 1993</td>
+    <td  style="color:rgb(27, 17, 17);font-size:15px; font-weight: bolder;">save your tears, side to side, Rain on me, Into you, One last time</td>
+</tr>
+</thead>
+</table>
+<br>
+
+</br>
+</div>
+
+
+
+
+</script>
+
+
+
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtvalue;
+          
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for( i=0; i < tr.length ; i++){
+                td = tr[i].getElementsByTagName("td")[1];
+                if(td){
+                    txtvalue = td.textContent || td.innerText;
+                    if(txtvalue.toUpperCase().indexOf(filter) > -1){
+                        tr[i].style.display = "";
+                    }
+                    else{
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+     
+</body>
+
+</html>

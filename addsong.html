@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+<head>
+    <title>
+        Adding a song
+    </title>
+    <style>
+        body {  
+            background-color: #42accc;
+            background-repeat: no-repeat;
+            
+            
+        }
+        .main{
+            
+            top: 140px;
+            left: 400px;
+            width: 600px;
+            background-color:#a3b8f1;
+            border-radius: 50px;
+            align-items: center;
+            padding: 5%;
+            
+        }
+        
+        h1{
+            color: #0e090c;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        input[type=submit]{
+            background-color: #189bdd;
+            border: 10px;
+            color: rgb(12, 9, 9);
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div align = 'center' class="main" style="font-weight: bolder">
+        <h1>ADDING A SONG</h1>
+        
+            <table  width="400" cellpadding="15" b >
+                <tr>
+                
+                    <td align="right" style="font-size:20px"> Song Name:  </td> 
+                    <td align="left" ><input style="height:35px;font-size:14pt;" type="text" name="song name"  ></td>
+                </tr>
+                <tr>
+                    <td align="right" style="font-size:20px";> Artwork: </td>
+                    <td align="left"><input style="height:50px;font-size:14pt;" class="file-upload-input" type="file" onchange="readurl(this)" accept="image/*" name="Artwork"></td>
+
+                </tr>
+                <tr>
+                    <td align="right" style="font-size:20px";> Date of Release: </td>
+                    <td align="left"><input style="height:40px;font-size:14pt;" type="date" name="date of release"></td>
+                </tr>
+                <tr>
+                    <td align="right" style="font-size:20px";> Artist: </td>
+                    
+                    <td align="left"><div class="custom-select" style="height:50px;font-size:15pt;">
+                        <select>
+                          <option value="0">Select artist:</option>
+                          <option value="1">justin</option>
+                          <option value="2">Arjith singh</option>
+                          <option value="3">Sid sriram</option>
+                          <option value="4">Shawn mendes</option>
+                          <option value="5">Ariana Grande</option>
+                          <option value="7">Armaan malik</option>
+                          <option value="8">Dhvani Bhanushali</option>
+                          <option value="9">Alan Walke</option>
+                          <option value="10">Neha Kakkar</option>
+                          <option value="11"> anirudh ravichande</option>
+                          
+                        </select>
+                       
+                            
+                            <button style=  " background-color: #89d7eb; "  type="button" onclick="parent.location='artist.html'">+ADD ARTIST</button><br>
+               
+                      </div> </td>
+                </tr>
+            </table>
+            <input type="submit" onclick="parent.location='test.html'">
+        
+
+    </div>
+    
+</body>
+
+</html>
